@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+}
+
+/* Selector RGB/RGBA/HEX */
+.slt-clr-code {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    text-align: left;
+    width: 10em;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.slt-wrapper {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:  .1rem .1rem .2rem rgb(0,0,0), .1rem .1rem .2rem rgb(0,0,0);
+}
+
+.slt-wrapper::after {
+    content: "\25BC";
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.slt-wrapper:hover::after {
+    background-color: rgb(0,0,0);
+    color: #fff;
+}
+/* END OF SELECTOR-CLR */
+
+
+.content-wrapper { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: auto;
+    height: 130px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: .1rem .1rem .2rem rgb(0,0,0), .1rem .1rem .2rem rgb(0,0,0);
+}
+
+.content-wrapper .bg-text,
+.content-wrapper .inputs-clr,
+.content-wrapper .btn-clr {
+    margin: 5px auto;
+}
+
+.content-wrapper .input-clr,
+.content-wrapper .btn-clr {
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: .05rem .05rem .1rem rgb(0,0,0), .05rem .05rem .1rem rgb(0,0,0);
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.content-wrapper .red {
+    color: red;
+}
+.content-wrapper .green {
+    color: green;
+}
+.content-wrapper .blue {
+    color: blue;
+}
+.content-wrapper .alpha {
+    color: rgb(255, 200, 0);
+}
+.content-wrapper .hex {
+    color: rgb(128, 0, 255);
+}
+
+.content-wrapper .btn-clr {
+    padding: 5px;
+    background-color: #fff;
+}
+
+.content-wrapper .btn-clr:hover {
+    transform: scale(1.05);
+    background-color: #000;
+    color: #fff;
+}
+
+
+
